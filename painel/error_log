@@ -1,0 +1,4 @@
+[22-Jan-2023 17:37:10 America/Sao_Paulo] PHP Warning:  move_uploaded_file(../registros/1/wpp-pic.png): failed to open stream: No such file or directory in /home1/igbsig57/soleluaimobiliaria.com.br/agenda/painel/editar-conta.php on line 30
+[22-Jan-2023 17:37:10 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpa42aM5' to '../registros/1/wpp-pic.png' in /home1/igbsig57/soleluaimobiliaria.com.br/agenda/painel/editar-conta.php on line 30
+[22-Jan-2023 17:38:18 America/Sao_Paulo] PHP Warning:  move_uploaded_file(../registros/1/wpp-pic.png): failed to open stream: No such file or directory in /home1/igbsig57/soleluaimobiliaria.com.br/agenda/painel/editar-conta.php on line 30
+[22-Jan-2023 17:38:18 America/Sao_Paulo] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php5Ag7XC' to '../registros/1/wpp-pic.png' in /home1/igbsig57/soleluaimobiliaria.com.br/agenda/painel/editar-conta.php on line 30

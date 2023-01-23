@@ -1,0 +1,109 @@
+.fa-user-cog{
+    color: #181818;
+    transform: scale(1.2);
+}
+.user-name{
+    color: #181818;
+    font-size: 20px;
+    font-weight: 500;
+}
+.tools{
+    display: block !important;
+}
+.todo-icon:hover{
+    transform: scale(1.2);
+}
+.li-borda{
+    user-select: none;
+    border: 1px solid transparent !important;
+    border-left: 3px solid #ccc !important;
+}
+.li-borda:hover{
+    border: 1px solid #ccc !important;
+    border-left: 3px solid #ccc !important;
+}
+.main-footer{
+    position: sticky;
+    bottom: 0px;
+}
+.badge{
+    font-size: 0.8em !important;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+.pendentes{
+    font-size: 14px !important;
+}
+.bg-agenda{
+    color: #fff;
+    background-color: #243E36;
+}
+.search-form{
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #243E36;
+    border-radius: 0;
+}
+.search-form:focus{
+    border-bottom: 2px solid #243E36;
+    background-color: transparent;
+}
+.search-form::placeholder{
+    letter-spacing: 2px;
+}
+.btn-edit{
+    color: #243E36;
+}
+.btn-edit:hover{
+    transform: scale(1.2);
+    color: #243E36;
+}
+.alert-hover:hover{
+    background-color: #F2F2F2;
+}
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.5em;
+    cursor: pointer;
+}
+.no-border{
+    border: 0 !important;
+}
+.border-login{
+    border-bottom: 2px solid #243E36;
+}
+.card-log{
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.user-panel > .image > img{
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: cover;
+}
+.custom-navbar-user-img{
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+}
+.profile-pic-preview{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+    border: 1px solid #555;
+}
+.profile-pic-active{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #555;
+}
+.custom-file-label{
+    cursor: pointer !important;
+}
