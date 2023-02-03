@@ -104,7 +104,7 @@ require_once "../conexao.php";
             <form class="form-inline" action="search-inquilino.php" method="GET">
               <div class="form-group">
               <input type="text" name="pesquisar" class="form-control search-form pr-0" placeholder="Pesquisar...">
-              <button class="btn btn-edit pl-0" type="submit"><i class="fas fa-search"></i></button>
+              <button onclick="this.form.pesquisar.value=this.form.pesquisar.value.trim()" class="btn btn-edit pl-0" type="submit"><i class="fas fa-search"></i></button>
               </div>
             </form>
             </div>
