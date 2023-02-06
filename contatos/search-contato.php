@@ -100,10 +100,13 @@ require_once "../conexao.php";
         <div class="row mb-2">
           <div class="col-12">
             <div class="d-flex flex-row-reverse">
-            <a style="border-radius: 30px;" class="btn btn-lg btn-success ml-2" href="new-contato.php"><i class="fas fa-plus-circle mr-2"></i>Novo contato</a> 
+            <a style="border-radius: 30px;" class="btn btn-lg btn-success ml-2" href="new-contato.php"><i class="fas fa-plus-circle mr-2"></i>Novo contato</a>
+            <?php 
+              $get_param = filter_input(INPUT_GET, 'pesquisar', FILTER_SANITIZE_STRING);
+            ?>
             <form class="form-inline" action="search-contato.php" method="GET">
               <div class="form-group">
-              <input type="text" name="pesquisar" class="form-control search-form pr-0" placeholder="Pesquisar Prop...">
+              <input type="text" name="pesquisar" class="form-control search-form pr-0" placeholder="Pesquisar Prop..." value="<?= $get_param ?>" autofocus onfocus="var temp_value=this.value; this.value=''; this.value=temp_value">
               <button onclick="this.form.pesquisar.value=this.form.pesquisar.value.trim()" class="btn btn-edit pl-0" type="submit"><i class="fas fa-search"></i></button>
               </div>
             </form>             
