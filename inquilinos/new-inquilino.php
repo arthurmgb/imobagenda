@@ -116,25 +116,25 @@
             <div class="form-row">
             <div class="form-group col-6">
                 <label>E-mail</label>
-                <input type="email" name="email" class="form-control" >
+                <input type="email" name="email" class="form-control">
             </div>           
             <div class="form-group col-6">
                 <label>Profissão</label>
-                <input type="text" name="profissao" class="form-control" required>
+                <input type="text" name="profissao" class="form-control">
             </div>
             </div>
             <div class="form-row">
             <div class="form-group col-4">
                 <label>Bairro</label>
-                <input type="text" name="bairro" class="form-control" required>
+                <input type="text" name="bairro" class="form-control">
             </div>
             <div class="form-group col-6">
                 <label>Endereço</label>
-                <input type="text" name="endereco" class="form-control" required>
+                <input type="text" name="endereco" class="form-control">
             </div>
             <div class="form-group col-2">
                 <label>Número</label>
-                <input type="number" name="numero" min="1" class="form-control" required>
+                <input type="number" name="numero" min="1" class="form-control">
             </div>
             </div>
             <div class="form-row">

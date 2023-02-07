@@ -23,8 +23,8 @@ if (mysqli_affected_rows($conn)) {
     </div>";
     header("Location: proprietarios.php");
 } else {
-    $_SESSION['msg'] = "<div id='remove' class='alert alert-danger mb-2' role='alert'>
-    Erro ao editar proprietário!
+    $_SESSION['msg'] = "<div id='remove' class='alert alert-warning mb-2' role='alert'>
+    Nenhum campo foi editado.
     </div>";
     header("Location: proprietarios.php");
 }

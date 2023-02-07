@@ -127,21 +127,21 @@
             </div>           
             <div class="form-group col-6">
                 <label>Profissão</label>
-                <input type="text" value="<?= $value['profissao'] ?>" name="profissao" class="form-control" required>
+                <input type="text" value="<?= $value['profissao'] ?>" name="profissao" class="form-control">
             </div>
             </div>
             <div class="form-row">
             <div class="form-group col-4">
                 <label>Bairro</label>
-                <input type="text" value="<?= $value['bairro'] ?>" name="bairro" class="form-control" required>
+                <input type="text" value="<?= $value['bairro'] ?>" name="bairro" class="form-control">
             </div>
             <div class="form-group col-6">
                 <label>Endereço</label>
-                <input type="text" value="<?= $value['endereco'] ?>" name="endereco" class="form-control" required>
+                <input type="text" value="<?= $value['endereco'] ?>" name="endereco" class="form-control">
             </div>
             <div class="form-group col-2">
                 <label>Número</label>
-                <input type="number" value="<?= $value['numero'] ?>" name="numero" min="1" class="form-control" required>
+                <input type="number" value="<?= $value['numero'] ?>" name="numero" min="1" class="form-control">
             </div>
             </div>
             <div class="form-row">

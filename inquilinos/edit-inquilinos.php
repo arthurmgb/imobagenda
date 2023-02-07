@@ -123,25 +123,25 @@
             <div class="form-row">
             <div class="form-group col-6">
                 <label>E-mail</label>
-                <input type="email" value="<?=$edit_row['email']?>" name="email" class="form-control" >
+                <input type="email" value="<?=$edit_row['email']?>" name="email" class="form-control">
             </div>           
             <div class="form-group col-6">
                 <label>Profissão</label>
-                <input type="text" value="<?=$edit_row['profissao']?>" name="profissao" class="form-control" required>
+                <input type="text" value="<?=$edit_row['profissao']?>" name="profissao" class="form-control">
             </div>
             </div>
             <div class="form-row">
             <div class="form-group col-4">
                 <label>Bairro</label>
-                <input type="text" name="bairro" value="<?=$edit_row['bairro']?>" class="form-control" required>
+                <input type="text" name="bairro" value="<?=$edit_row['bairro']?>" class="form-control">
             </div>
             <div class="form-group col-6">
                 <label>Endereço</label>
-                <input type="text" value="<?=$edit_row['endereco']?>" name="endereco" class="form-control" required>
+                <input type="text" value="<?=$edit_row['endereco']?>" name="endereco" class="form-control">
             </div>
             <div class="form-group col-2">
                 <label>Número</label>
-                <input type="number" value="<?=$edit_row['numero']?>" name="numero" min="1" class="form-control" required>
+                <input type="number" value="<?=$edit_row['numero']?>" name="numero" min="1" class="form-control">
             </div>
             </div>
             <div class="form-row">

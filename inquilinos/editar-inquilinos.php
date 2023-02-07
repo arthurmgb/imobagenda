@@ -21,4 +21,9 @@ if (mysqli_affected_rows($conn)) {
     Inquilino editado com sucesso!
     </div>";
     header("Location: inquilinos.php");
+}else{
+    $_SESSION['msg'] = "<div id='remove' class='alert alert-warning mb-2' role='alert'>
+    Nenhum campo foi editado.
+    </div>";
+    header("Location: inquilinos.php");
 }
