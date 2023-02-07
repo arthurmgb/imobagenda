@@ -107,3 +107,6 @@ input[type=radio] {
 .custom-file-label{
     cursor: pointer !important;
 }
+td > a{
+    margin-top: 5px;
+}

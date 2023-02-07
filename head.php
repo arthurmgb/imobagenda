@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.css">
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-<link rel="stylesheet" href="../dist/css/style.css">
+<link rel="stylesheet" href="../dist/css/style.css?v=1.0">
 <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
