@@ -11,24 +11,29 @@
       print-color-adjust: exact;
       -webkit-print-color-adjust: exact;
     }
-    td{
+
+    td {
       word-wrap: break-word !important;
       border: 2px solid #666 !important;
     }
-    th{
+
+    th {
       border: 2px solid #666 !important;
     }
 
     @media print {
       .table-striped tbody tr:nth-of-type(odd) td {
-          background-color: #F2F2F2 !important;
+        background-color: #F2F2F2 !important;
       }
+
       body * {
         visibility: hidden;
       }
-      .d-print-none{
+
+      .d-print-none {
         display: none;
       }
+
       #print,
       #print * {
         visibility: visible;
@@ -112,13 +117,6 @@
   <!-- Scripts -->
   <?php require_once "../scripts.php" ?>
   <!-- Scripts -->
-  <script>
-    var tabela = document.getElementById('print').innerHTML,
-
-      impressao.document.write(tabela);
-    impressao.window.print();
-    impressao.window.close();
-  </script>
 </body>
 
 </html>
