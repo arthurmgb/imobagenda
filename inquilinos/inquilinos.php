@@ -138,13 +138,12 @@ require_once "../conexao.php";
                     <div class="card-body table-responsive">
                       <table class="table table-striped text-center">
                         <thead>
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">E-mail</th>
-                            <th scope="col">Celular</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Ações</th>
+                          <tr>                       
+                            <th scope="col" width="120">Nome</th>
+                            <th scope="col" width="120">Celular</th>
+                            <th scope="col" width="100">Celular 2</th>
+                            <th scope="col" width="120">Telefone</th>
+                            <th scope="col" width="100">Ações</th>
                           </tr>
                         </thead>
                         <?php
@@ -160,16 +159,15 @@ require_once "../conexao.php";
                         <tbody>
                           <?php while ($row_inquilino = mysqli_fetch_assoc($voltar_inquilino_query)) :
                             $id_inquilino = $row_inquilino['id'];
-                            $nome_inquilino = $row_inquilino['nome'];
-                            $email_inquilino = $row_inquilino['email'];
+                            $nome_inquilino = $row_inquilino['nome'];                    
                             $celular_inquilino = $row_inquilino['celular'];
+                            $celular_inquilino2 = $row_inquilino['celular2'];
                             $telefone_inquilino = $row_inquilino['telefone'];
                           ?>
                             <tr>
-                              <th scope="row"><?= $id_inquilino ?></th>
-                              <td><?= $nome_inquilino ?></td>
-                              <td><?= $email_inquilino ?></td>
+                              <td><?= $nome_inquilino ?></td>                 
                               <td><?= $celular_inquilino ?></td>
+                              <td><?= $celular_inquilino2 ?></td>
                               <td><?= $telefone_inquilino ?></td>
                               <td>
                                 <a class="btn btn-sm btn btn-primary mx-1" style="border-radius: 60px" href="view-inquilinos.php?id=<?= $id_inquilino ?>" title="Visualizar"><i class="fas fa-eye"></i></a>

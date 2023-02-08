@@ -141,12 +141,11 @@ require_once "../conexao.php";
                   <table class="table table-striped text-center border">
                     <thead>
                       <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Celular</th>
-                        <th scope="col">Telefone</th>
-                        <th scope="col">Ações</th>
+                        <th scope="col" width="120">Nome</th>
+                        <th scope="col" width="120">Celular</th>
+                        <th scope="col" width="100">Celular 2</th>
+                        <th scope="col" width="120">Telefone</th>
+                        <th scope="col" width="100">Ações</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -166,15 +165,14 @@ require_once "../conexao.php";
                       <?php while ($row_prop = mysqli_fetch_assoc($exec_props)) :
                         $props_id = $row_prop['id'];
                         $props_nome = $row_prop['nome'];
-                        $props_email = $row_prop['email'];
                         $props_celular = $row_prop['celular1'];
+                        $props_celular2 = $row_prop['celular2'];
                         $props_telefone = $row_prop['telefone'];
                       ?>
                         <tr>
-                          <th scope="row"><?= $props_id ?></th>
                           <td><?= $props_nome ?></td>
-                          <td><?= $props_email ?></td>
                           <td><?= $props_celular ?></td>
+                          <td><?= $props_celular2 ?></td>
                           <td><?= $props_telefone ?></td>
                           <td>
                             <a title="Visualizar" style="border-radius: 60px;" class="btn btn-primary btn-sm mx-1" href="view-prop.php?id=<?= $props_id ?>"><i class="fas fa-eye"></i></a>

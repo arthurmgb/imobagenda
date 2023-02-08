@@ -141,11 +141,11 @@ require_once "../conexao.php";
                   <table class="table table-striped text-center border">
                     <thead>
                       <tr>
-                        <th class="text-primary border-right" scope="col">Proprietário</th>
-                        <th class="text-primary border-right" scope="col">Celular</th>
-                        <th class="text-success border-right" scope="col">Inquilino</th>
-                        <th class="text-success border-right" scope="col">Celular</th>
-                        <th class="bg-warning border-right" scope="col">Ações</th>
+                        <th class="text-primary border-right" scope="col" width="120">Proprietário</th>
+                        <th class="text-primary border-right" scope="col" width="120">Celular</th>
+                        <th class="text-success border-right" scope="col" width="120">Inquilino</th>
+                        <th class="text-success border-right" scope="col" width="120">Celular</th>
+                        <th class="bg-warning border-right" scope="col" width="100">Ações</th>
                       </tr>
                     </thead>
                     <?php

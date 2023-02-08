@@ -110,3 +110,6 @@ input[type=radio] {
 td > a{
     margin-top: 5px;
 }
+td{
+    word-wrap: break-word;
+}
