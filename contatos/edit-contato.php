@@ -171,7 +171,8 @@ require_once "../conexao.php";
                     <div id="bloco2" class="card mt-2 d-none" style="width: 18rem; border-top: 2px solid #28A745;">
                       <div id="selec_inq" class="card-body text-center"></div>
                     </div>
-                    <button style="border-radius: 60px;" type="submit" class="btn btn-lg btn-success float-right"><i class="fas fa-save mr-2"></i>Salvar contato</button>
+                    <hr>
+                    <button type="submit" class="btn btn-lg btn-info btn-block"><i class="fas fa-save mr-2"></i>Salvar contato</button>
 
                   </form>
                 </div>
