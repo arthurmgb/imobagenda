@@ -138,7 +138,16 @@ require_once "../conexao.php";
             <div class="col-12">
               <div class="card">
                 <div class="card-header bg-agenda">
-                  <h3 class="card-title"><i class="fas fa-user-tie mr-2"></i>Lista de Proprietários</h3>
+                  <h3 class="card-title">
+                    <i class="fas fa-user-tie mr-2"></i>
+                    <?php
+                      $query_total_props = "SELECT COUNT(*) AS c FROM proprietarios";
+                      $exec_total_props = mysqli_query($conn, $query_total_props);
+                      $get_total_props = mysqli_fetch_assoc($exec_total_props);
+
+                    ?>
+                    Lista de Proprietários - <b><?= $get_total_props['c'] ?></b>
+                  </h3>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-striped text-center border">

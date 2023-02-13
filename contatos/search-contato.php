@@ -142,12 +142,21 @@ require_once "../conexao.php";
             <div class="col-12">
               <div class="card">
                 <div class="card-header bg-agenda">
-                  <h3 class="card-title"><i class="fas fa-clipboard-list mr-2"></i>Lista de Contatos</h3>
+                  <h3 class="card-title">
+                    <i class="fas fa-clipboard-list mr-2"></i>
+                    <?php
+                      $query_total_contatos = "SELECT COUNT(*) AS c FROM contatos";
+                      $exec_total_contatos = mysqli_query($conn, $query_total_contatos);
+                      $get_total_contatos = mysqli_fetch_assoc($exec_total_contatos);
+
+                    ?>
+                    Lista de Contatos - <b><?= $get_total_contatos['c'] ?></b>
+                  </h3>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-striped text-center border">
                     <thead>
-                    <tr>
+                      <tr>
                         <th class="text-primary border-right" scope="col" width="120">Proprietário</th>
                         <th class="text-primary border-right" scope="col" width="120">Celular</th>
                         <th class="text-success border-right" scope="col" width="120">Inquilino</th>

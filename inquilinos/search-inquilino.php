@@ -135,7 +135,16 @@ require_once "../conexao.php";
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header bg-agenda">
-                      <h3 class="card-title"><i class="fas fa-user-friends nav-icon mr-2"></i>Lista de inquilinos</h3>
+                      <h3 class="card-title">
+                        <i class="fas fa-user-friends nav-icon mr-2"></i>
+                        <?php
+                        $query_total_inqs = "SELECT COUNT(*) AS c FROM inquilinos";
+                        $exec_total_inqs = mysqli_query($conn, $query_total_inqs);
+                        $get_total_inqs = mysqli_fetch_assoc($exec_total_inqs);
+
+                        ?>
+                        Lista de Inquilinos - <b><?= $get_total_inqs['c'] ?></b>
+                      </h3>
                     </div>
                     <div class="card-body table-responsive">
                       <table class="table table-striped text-center">
@@ -167,7 +176,7 @@ require_once "../conexao.php";
                             $celular_inquilino2 = $row_inquilino['celular2'];
                             $telefone_inquilino = $row_inquilino['telefone'];
                           ?>
-                            <tr>                       
+                            <tr>
                               <td><?= $nome_inquilino ?></td>
                               <td><?= $celular_inquilino ?></td>
                               <td><?= $celular_inquilino2 ?></td>

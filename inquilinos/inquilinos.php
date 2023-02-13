@@ -133,12 +133,21 @@ require_once "../conexao.php";
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header bg-agenda">
-                      <h3 class="card-title"><i class="fas fa-user-friends nav-icon mr-2"></i>Lista de Inquilinos</h3>
+                      <h3 class="card-title">
+                        <i class="fas fa-user-friends nav-icon mr-2"></i>
+                        <?php
+                        $query_total_inqs = "SELECT COUNT(*) AS c FROM inquilinos";
+                        $exec_total_inqs = mysqli_query($conn, $query_total_inqs);
+                        $get_total_inqs = mysqli_fetch_assoc($exec_total_inqs);
+
+                        ?>
+                        Lista de Inquilinos - <b><?= $get_total_inqs['c'] ?></b>
+                      </h3>
                     </div>
                     <div class="card-body table-responsive">
                       <table class="table table-striped text-center">
                         <thead>
-                          <tr>                       
+                          <tr>
                             <th scope="col" width="120">Nome</th>
                             <th scope="col" width="120">Celular</th>
                             <th scope="col" width="100">Celular 2</th>
@@ -159,13 +168,13 @@ require_once "../conexao.php";
                         <tbody>
                           <?php while ($row_inquilino = mysqli_fetch_assoc($voltar_inquilino_query)) :
                             $id_inquilino = $row_inquilino['id'];
-                            $nome_inquilino = $row_inquilino['nome'];                    
+                            $nome_inquilino = $row_inquilino['nome'];
                             $celular_inquilino = $row_inquilino['celular'];
                             $celular_inquilino2 = $row_inquilino['celular2'];
                             $telefone_inquilino = $row_inquilino['telefone'];
                           ?>
                             <tr>
-                              <td><?= $nome_inquilino ?></td>                 
+                              <td><?= $nome_inquilino ?></td>
                               <td><?= $celular_inquilino ?></td>
                               <td><?= $celular_inquilino2 ?></td>
                               <td><?= $telefone_inquilino ?></td>
